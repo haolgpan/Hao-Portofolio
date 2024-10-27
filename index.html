@@ -16,17 +16,6 @@
         <title>Hao Pan</title>
     </head>
     <body>
-        <!-- Selector de idioma -->
-        <nav class="nav container">
-            <button onclick="setLanguage('en')" class="lang-button">
-                <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="English" class="flag-icon">
-                English
-            </button>
-            <button onclick="setLanguage('es')" class="lang-button">
-                <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg" alt="Español" class="flag-icon">
-                Español
-            </button>
-        </nav>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
@@ -70,6 +59,14 @@
                     <!-- Theme change button -->
 
                     <i class="uil uil-moon change-theme" id="theme-button"></i>
+                    <div class="lang-buttons">
+                        <button onclick="setLanguage('en')" class="lang-button">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="English" class="flag-icon">
+                        </button>
+                        <button onclick="setLanguage('es')" class="lang-button">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg" alt="Español" class="flag-icon">
+                        </button>
+                    </div>
 
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
