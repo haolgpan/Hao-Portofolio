@@ -872,43 +872,21 @@
     <!--==================== MAIN JS ====================-->
     <script src="./packages/js/main.js"></script>
     <script>
-        const translations = {
-            en: {
-                homeLink: "Home",
-                aboutLink: "About",
-                skillsLink: "Skills",
-                servicesLink: "Services",
-                portfolioLink: "Portfolio",
-                contactLink: "Contact",
-                homeTitle: "Hi, I'm Hao Pan",
-                homeSubtitle: "Junior software developer",
-                homeDescription: "I'm a Junior software developer with 1 year...",
-                contactButton: "Contact Me",
-                aboutTitle: "About Me",
-                aboutDescription: "I'm a Junior software developer interested in programming..."
-            },
-            es: {
-                homeLink: "Inicio",
-                aboutLink: "Sobre mí",
-                skillsLink: "Habilidades",
-                servicesLink: "Servicios",
-                portfolioLink: "Portafolio",
-                contactLink: "Contacto",
-                homeTitle: "Hola, soy Hao Pan",
-                homeSubtitle: "Desarrollador de software junior",
-                homeDescription: "Soy un desarrollador junior con 1 año de experiencia...",
-                contactButton: "Contáctame",
-                aboutTitle: "Sobre mí",
-                aboutDescription: "Soy un desarrollador junior interesado en la programación..."
-            }
-        };
+    function setLanguage(language) {
+            console.log(`Idioma cambiado a: ${language}`);
 
-        function setLanguage(lang) {
-            for (const id in translations[lang]) {
-                document.getElementById(id).textContent = translations[lang][id];
+            if (language === 'es') {
+                document.querySelector('.home__title').textContent = "Hola, soy Hao Pan";
+                document.querySelector('.home__subtitle').textContent = "Desarrollador de software junior";
+                document.querySelector('.home__description').textContent = "Soy desarrollador junior con un año de experiencia...";
+                // Cambia otros elementos según el idioma seleccionado
+            } else {
+                document.querySelector('.home__title').textContent = "Hi, I'm Hao Pan";
+                document.querySelector('.home__subtitle').textContent = "Junior software developer";
+                document.querySelector('.home__description').textContent = "I'm a Junior software developer with 1 year of experience...";
+                // Cambia otros elementos a inglés si selecciona 'en'
             }
         }
-        setLanguage('en');
     </script>
 </body>
 
