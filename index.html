@@ -147,15 +147,15 @@
                         <div class="about__info">
                             <div>
                                 <span class="about__info-title">1</span>
-                                <span class="about__info-name">Years <br> experience</span>
+                                <span class="about__info-name">Year experience</span>
                             </div>
                             <div>
                                 <span class="about__info-title">2</span>
-                                <span class="about__info-name">Completed <br> certifications</span>
+                                <span class="about__info-name">Completed certifications</span>
                             </div>
                             <div>
                                 <span class="about__info-title">1</span>
-                                <span class="about__info-name">companies<br>worked</span>
+                                <span class="about__info-name">companies worked for</span>
                             </div>
                         </div>
 
@@ -605,7 +605,7 @@
             <div class="portfolio__container container swiper-container">
                 <div class="swiper-wrapper">
         <!--==================== PORTFOLIO 1 ====================-->
-        
+
             <div class="portfolio__content grid swiper-slide">
                 <img src="./packages/images/space.gif" alt="" class="portfolio__img">
 
@@ -621,7 +621,7 @@
             </div>
 
             <!--==================== PORTFOLIO 2 ====================-->
-        
+
             <div class="portfolio__content grid swiper-slide">
                 <img src="./packages/images/videoplayer.gif" alt="" class="portfolio__img">
 
@@ -837,14 +837,11 @@
                 </ul>
 
                 <div class="footer__socials">
-                    <a href=https://www.facebook.com/prashanna.drashan" target="_blank" class="footer__social">
+                    <a href=https://www.facebook.com/haopan target="_blank" class="footer__social">
                         <i class="uil uil-facebook"></i>
                     </a>
-                    <a href="https://www.instagram.com/prashanna01/" target="_blank" class="footer__social">
+                    <a href="https://www.instagram.com/haoitohao" target="_blank" class="footer__social">
                         <i class="uil uil-instagram"></i>
-                    </a>
-                    <a href="https://twitter.com/prashanna01" target="_blank" class="footer__social">
-                        <i class="uil uil-twitter-alt"></i>
                     </a>
                 </div>
             </div>
@@ -864,130 +861,164 @@
     <script src="./packages/js/main.js"></script>
     <script>
         function setLanguage(language) {
-    console.log(`Idioma cambiado a: ${language}`);
+            console.log(`Idioma cambiado a: ${language}`);
 
-    // Cambiar texto de la sección principal
-        if (language === 'es') {
-            document.querySelector('.home__title').textContent = "Hola, soy Hao Pan";
-            document.querySelector('.home__subtitle').textContent = "Desarrollador de software junior";
-            document.querySelector('.home__description').textContent = `Soy desarrollador junior con un año de experiencia en una
-                start-up, aprendí más que nunca y busco nuevas metas.`;
+            // Cambiar texto de la sección principal
+                if (language === 'es') {
+                    document.querySelector('.home__title').textContent = "Hola, soy Hao Pan";
+                    document.querySelector('.home__subtitle').textContent = "Desarrollador de software junior";
+                    document.querySelector('.home__description').textContent = `Soy desarrollador junior con un año de experiencia en una
+                        start-up, aprendí más que nunca y busco nuevas metas.`;
 
-            // Cambiar texto de los enlaces de navegación
-            document.querySelector('.nav__link[href="#home"]').textContent = "Inicio";
-            document.querySelector('.nav__link[href="#about"]').textContent = "Acerca de";
-            document.querySelector('.nav__link[href="#skills"]').textContent = "Habilidades";
-            document.querySelector('.nav__link[href="#services"]').textContent = "Servicios";
-            document.querySelector('.nav__link[href="#portfolio"]').textContent = "Portafolio";
-            document.querySelector('.nav__link[href="#contact"]').textContent = "Contacto";
+                    // Cambiar texto de los enlaces de navegación
+                    document.querySelector('.nav__link[href="#home"]').textContent = "Inicio";
+                    document.querySelector('.nav__link[href="#about"]').textContent = "Acerca de";
+                    document.querySelector('.nav__link[href="#skills"]').textContent = "Habilidades";
+                    document.querySelector('.nav__link[href="#services"]').textContent = "Servicios";
+                    document.querySelector('.nav__link[href="#portfolio"]').textContent = "Portafolio";
+                    document.querySelector('.nav__link[href="#contact"]').textContent = "Contacto";
 
-            // Cambiar texto de la sección "About Me"
-            document.querySelector('.section__title').textContent = "Sobre Mí";
-            document.querySelector('.section__subtitle').textContent = "Mi Introducción";
-            document.querySelector('.about__description').textContent = `Soy un desarrollador junior de software
-                interesado en programar aplicaciones funcionales y optimizadas para dispositivos diarios y, últimamente,
-                muy interesado en herramientas de IA y en el uso de tecnologías con TensorFlow.`;
+                    // Cambiar texto de la sección "About Me"
+                    const aboutSection = document.querySelector('.about');
+                    aboutSection.querySelector('.section__title').textContent = "Sobre Mí";
+                    aboutSection.querySelector('.section__subtitle').textContent = "Mi Introducción";
+                    aboutSection.querySelector('.about__description').textContent = `Soy un desarrollador junior de software
+                        interesado en programar aplicaciones funcionales y optimizadas para dispositivos diarios y, últimamente,
+                        muy interesado en herramientas de IA y en el uso de tecnologías con TensorFlow.`;
 
-            // Cambiar información adicional
-            document.querySelectorAll('.about__info-title')[0].textContent = "1";
-            document.querySelectorAll('.about__info-name')[0].textContent = "Año <br> de experiencia";
-            document.querySelectorAll('.about__info-title')[1].textContent = "2";
-            document.querySelectorAll('.about__info-name')[1].textContent = "Certificaciones <br> completadas";
-            document.querySelectorAll('.about__info-title')[2].textContent = "1";
-            document.querySelectorAll('.about__info-name')[2].textContent = "empresas <br> en las que he trabajado";
+                    // Cambiar información adicional
+                    document.querySelectorAll('.about__info-title')[0].textContent = "1";
+                    document.querySelectorAll('.about__info-name')[0].textContent = "Año de experiencia";
+                    document.querySelectorAll('.about__info-title')[1].textContent = "2";
+                    document.querySelectorAll('.about__info-name')[1].textContent = "Certificaciones completadas";
+                    document.querySelectorAll('.about__info-title')[2].textContent = "1";
+                    document.querySelectorAll('.about__info-name')[2].textContent = "empresas en las que he trabajado";
 
-            // Cambiar texto de la sección "Skills"
-            document.querySelector('.skills__title').textContent = "Desarrollador Fullstack";
-            document.querySelector('.skills__subtitle').textContent = "1 año de experiencia";
+                    // Cambiar texto de la sección "Skills"
+                    document.querySelector('.skills__title').textContent = "Desarrollador Fullstack";
+                    document.querySelector('.skills__subtitle').textContent = "1 año de experiencia";
 
-            // Para habilidades adicionales
-            const skillsContent = document.querySelectorAll('.skills__content');
-            skillsContent[0].querySelector('.skills__title').textContent = "Desarrollador Fullstack";
-            skillsContent[0].querySelector('.skills__subtitle').textContent = "1 año de experiencia";
+                    // Para habilidades adicionales
+                    const skillsContent = document.querySelectorAll('.skills__content');
+                    skillsContent[0].querySelector('.skills__title').textContent = "Desarrollador Fullstack";
+                    skillsContent[0].querySelector('.skills__subtitle').textContent = "1 año de experiencia";
 
-            skillsContent[1].querySelector('.skills__title').textContent = "Proyectos personales";
-            skillsContent[1].querySelector('.skills__subtitle').textContent = "Más de 2 años";
+                    skillsContent[1].querySelector('.skills__title').textContent = "Proyectos personales";
+                    skillsContent[1].querySelector('.skills__subtitle').textContent = "Más de 2 años";
 
-            skillsContent[2].querySelector('.skills__title').textContent = "Desarrollador Web";
-            skillsContent[2].querySelector('.skills__subtitle').textContent = "Menos de 1 año";
+                    skillsContent[2].querySelector('.skills__title').textContent = "Desarrollador Web";
+                    skillsContent[2].querySelector('.skills__subtitle').textContent = "Menos de 1 año";
 
-            document.querySelector('.section__title').textContent = "Servicios";
-            document.querySelector('.section__subtitle').textContent = "Qué servicios ofrezco";
+                    // Cambiar texto de la sección "Servicios"
+                    const servicesSection = document.querySelector('.services');
+                    servicesSection.querySelector('.section__title').textContent = "Servicios";
+                    servicesSection.querySelector('.section__subtitle').textContent = "Qué servicios ofrezco";
 
-            const servicesContent = document.querySelectorAll('.services__content');
+                    const servicesContent = servicesSection.querySelectorAll('.services__content');
 
-            // Servicio 1: Front End Developer
-            servicesContent[0].querySelector('.services__title').textContent = "Desarrollador Front End";
-            servicesContent[0].querySelector('.services__modal-title').textContent = "Desarrollador Front End";
-            servicesContent[0].querySelectorAll('.services__modal-service p')[0].textContent = "Optimizo la experiencia del usuario.";
-            servicesContent[0].querySelectorAll('.services__modal-service p')[1].textContent = "Automatizando la recuperación de información.";
-            servicesContent[0].querySelectorAll('.services__modal-service p')[2].textContent = "Optimizar el rendimiento web.";
-            servicesContent[0].querySelectorAll('.services__modal-service p')[3].textContent = "Visualizando gráficos, tablas y preparando informes y paneles.";
-            servicesContent[0].querySelectorAll('.services__modal-service p')[4].textContent = "Capacitado en el uso de WooCommerce.";
+                    // Servicio 1: Front End Developer
+                    servicesContent[0].querySelector('.services__title').textContent = "Desarrollador Front End";
+                    servicesContent[0].querySelector('.services__modal-title').textContent = "Desarrollador Front End";
+                    servicesContent[0].querySelectorAll('.services__modal-service p')[0].textContent = "Optimizo la experiencia del usuario.";
+                    servicesContent[0].querySelectorAll('.services__modal-service p')[1].textContent = "Automatizando la recuperación de información.";
+                    servicesContent[0].querySelectorAll('.services__modal-service p')[2].textContent = "Optimizar el rendimiento web.";
+                    servicesContent[0].querySelectorAll('.services__modal-service p')[3].textContent = "Visualizando gráficos, tablas y preparando informes y paneles.";
+                    servicesContent[0].querySelectorAll('.services__modal-service p')[4].textContent = "Capacitado en el uso de WooCommerce.";
 
-            // Servicio 2: Back End Developer
-            servicesContent[1].querySelector('.services__title').textContent = "Desarrollador Back End";
-            servicesContent[1].querySelector('.services__modal-title').textContent = "Asistente de Desarrollo Back End";
-            servicesContent[1].querySelectorAll('.services__modal-service p')[0].textContent = "Asistiendo en el desarrollo de API y otras necesidades para la empresa y depuración de errores.";
-            servicesContent[1].querySelectorAll('.services__modal-service p')[1].textContent = "Mantener el código fuente.";
-            servicesContent[1].querySelectorAll('.services__modal-service p')[2].textContent = "Asistir a desarrolladores senior en Google Cloud.";
-            servicesContent[1].querySelectorAll('.services__modal-service p')[3].textContent = "Implementar nuevas características y otras necesidades de la empresa.";
+                    // Servicio 2: Back End Developer
+                    servicesContent[1].querySelector('.services__title').textContent = "Desarrollador Back End";
+                    servicesContent[1].querySelector('.services__modal-title').textContent = "Asistente de Desarrollo Back End";
+                    servicesContent[1].querySelectorAll('.services__modal-service p')[0].textContent = "Asistiendo en el desarrollo de API y otras necesidades para la empresa y depuración de errores.";
+                    servicesContent[1].querySelectorAll('.services__modal-service p')[1].textContent = "Mantener el código fuente.";
+                    servicesContent[1].querySelectorAll('.services__modal-service p')[2].textContent = "Asistir a desarrolladores senior en Google Cloud.";
+                    servicesContent[1].querySelectorAll('.services__modal-service p')[3].textContent = "Implementar nuevas características y otras necesidades de la empresa.";
 
-            // Servicio 3: Web Developer
-            servicesContent[2].querySelector('.services__title').textContent = "Desarrollador Web";
-            servicesContent[2].querySelector('.services__modal-title').textContent = "Desarrollador Web";
-            servicesContent[2].querySelectorAll('.services__modal-service p')[0].textContent = "Mejorar la interfaz de usuario.";
-            servicesContent[2].querySelectorAll('.services__modal-service p')[1].textContent = "Desarrollo de páginas web.";
-            servicesContent[2].querySelectorAll('.services__modal-service p')[2].textContent = "Traducir la página web a diferentes idiomas.";
-            servicesContent[2].querySelectorAll('.services__modal-service p')[3].textContent = "Desarrollar y mejorar el reproductor de video.";
+                    // Servicio 3: Web Developer
+                    servicesContent[2].querySelector('.services__title').textContent = "Desarrollador Web";
+                    servicesContent[2].querySelector('.services__modal-title').textContent = "Desarrollador Web";
+                    servicesContent[2].querySelectorAll('.services__modal-service p')[0].textContent = "Mejorar la interfaz de usuario.";
+                    servicesContent[2].querySelectorAll('.services__modal-service p')[1].textContent = "Desarrollo de páginas web.";
+                    servicesContent[2].querySelectorAll('.services__modal-service p')[2].textContent = "Traducir la página web a diferentes idiomas.";
+                    servicesContent[2].querySelectorAll('.services__modal-service p')[3].textContent = "Desarrollar y mejorar el reproductor de video.";
 
+                } else {
+                    document.querySelector('.home__title').textContent = "Hi, I'm Hao Pan";
+                    document.querySelector('.home__subtitle').textContent = "Junior software developer";
+                    document.querySelector('.home__description').textContent = `I'm a Junior software developer with 1 year of experience in
+                        a start-up, learned a lot more than I could have ever imagined and looking for a new challenge.`;
 
+                    // Cambiar texto de los enlaces de navegación a inglés
+                    document.querySelector('.nav__link[href="#home"]').textContent = "Home";
+                    document.querySelector('.nav__link[href="#about"]').textContent = "About";
+                    document.querySelector('.nav__link[href="#skills"]').textContent = "Skills";
+                    document.querySelector('.nav__link[href="#services"]').textContent = "Services";
+                    document.querySelector('.nav__link[href="#portfolio"]').textContent = "Portfolio";
+                    document.querySelector('.nav__link[href="#contact"]').textContent = "Contact";
 
-        } else {
-            document.querySelector('.home__title').textContent = "Hi, I'm Hao Pan";
-            document.querySelector('.home__subtitle').textContent = "Junior software developer";
-            document.querySelector('.home__description').textContent = `I'm a Junior software developer with 1 year of experience in
-                a start-up, learned a lot more than I could have ever imagined and looking for a new challenge.`;
+                    // Cambiar texto de la sección "About Me"
+                    document.querySelector('.section__title').textContent = "About Me";
+                    document.querySelector('.section__subtitle').textContent = "My Introduction";
+                    document.querySelector('.about__description').textContent = `I'm a Junior software developer interested in programming functional and optimized
+                        applications for daily appliances and lately very interested in AI tools and use of
+                        technologies using TensorFlow.`;
 
-            // Cambiar texto de los enlaces de navegación a inglés
-            document.querySelector('.nav__link[href="#home"]').textContent = "Home";
-            document.querySelector('.nav__link[href="#about"]').textContent = "About";
-            document.querySelector('.nav__link[href="#skills"]').textContent = "Skills";
-            document.querySelector('.nav__link[href="#services"]').textContent = "Services";
-            document.querySelector('.nav__link[href="#portfolio"]').textContent = "Portfolio";
-            document.querySelector('.nav__link[href="#contact"]').textContent = "Contact";
+                    // Cambiar información adicional
+                    document.querySelectorAll('.about__info-title')[0].textContent = "1";
+                    document.querySelectorAll('.about__info-name')[0].textContent = "Year  experience";
+                    document.querySelectorAll('.about__info-title')[1].textContent = "2";
+                    document.querySelectorAll('.about__info-name')[1].textContent = "Completed  certifications";
+                    document.querySelectorAll('.about__info-title')[2].textContent = "1";
+                    document.querySelectorAll('.about__info-name')[2].textContent = "companies  worked";
 
-            // Cambiar texto de la sección "About Me"
-            document.querySelector('.section__title').textContent = "About Me";
-            document.querySelector('.section__subtitle').textContent = "My Introduction";
-            document.querySelector('.about__description').textContent = `I'm a Junior software developer interested in programming functional and optimized
-                applications for daily appliances and lately very interested in AI tools and use of
-                technologies using TensorFlow.`;
+                    // Cambiar texto de la sección "Skills"
+                    document.querySelector('.skills__title').textContent = "Fullstack developer";
+                    document.querySelector('.skills__subtitle').textContent = "1 year experience";
 
-            // Cambiar información adicional
-            document.querySelectorAll('.about__info-title')[0].textContent = "1";
-            document.querySelectorAll('.about__info-name')[0].textContent = "Year <br> experience";
-            document.querySelectorAll('.about__info-title')[1].textContent = "2";
-            document.querySelectorAll('.about__info-name')[1].textContent = "Completed <br> certifications";
-            document.querySelectorAll('.about__info-title')[2].textContent = "1";
-            document.querySelectorAll('.about__info-name')[2].textContent = "companies <br> worked";
+                    // Para habilidades adicionales
+                    const skillsContent = document.querySelectorAll('.skills__content');
+                    skillsContent[0].querySelector('.skills__title').textContent = "Fullstack developer";
+                    skillsContent[0].querySelector('.skills__subtitle').textContent = "1 year experience";
 
-            // Cambiar texto de la sección "Skills"
-            document.querySelector('.skills__title').textContent = "Fullstack developer";
-            document.querySelector('.skills__subtitle').textContent = "1 year experience";
+                    skillsContent[1].querySelector('.skills__title').textContent = "Personal projects";
+                    skillsContent[1].querySelector('.skills__subtitle').textContent = "More than 2 years";
 
-            // Para habilidades adicionales
-            const skillsContent = document.querySelectorAll('.skills__content');
-            skillsContent[0].querySelector('.skills__title').textContent = "Fullstack developer";
-            skillsContent[0].querySelector('.skills__subtitle').textContent = "1 year experience";
+                    skillsContent[2].querySelector('.skills__title').textContent = "Web Developer";
+                    skillsContent[2].querySelector('.skills__subtitle').textContent = "Less than 1 year";
 
-            skillsContent[1].querySelector('.skills__title').textContent = "Personal projects";
-            skillsContent[1].querySelector('.skills__subtitle').textContent = "More than 2 years";
+                    // Cambiar texto de la sección "Servicios"
+                    const servicesSection = document.querySelector('.services');
+                    servicesSection.querySelector('.section__title').textContent = "Services";
+                    servicesSection.querySelector('.section__subtitle').textContent = "What services I offer";
 
-            skillsContent[2].querySelector('.skills__title').textContent = "Web Developer";
-            skillsContent[2].querySelector('.skills__subtitle').textContent = "Less than 1 year";
+                    const servicesContent = servicesSection.querySelectorAll('.services__content');
+
+                    // Servicio 1: Front End Developer
+                    servicesContent[0].querySelector('.services__title').textContent = "Front End Developer";
+                    servicesContent[0].querySelector('.services__modal-title').textContent = "Front End Developer";
+                    servicesContent[0].querySelectorAll('.services__modal-service p')[0].textContent = "I optimize user experience.";
+                    servicesContent[0].querySelectorAll('.services__modal-service p')[1].textContent = "Automating data retrieval.";
+                    servicesContent[0].querySelectorAll('.services__modal-service p')[2].textContent = "Optimizing web performance.";
+                    servicesContent[0].querySelectorAll('.services__modal-service p')[3].textContent = "Visualizing charts, tables, and preparing reports and dashboards.";
+                    servicesContent[0].querySelectorAll('.services__modal-service p')[4].textContent = "Trained in using WooCommerce.";
+
+                    // Servicio 2: Back End Developer
+                    servicesContent[1].querySelector('.services__title').textContent = "Back End Developer";
+                    servicesContent[1].querySelector('.services__modal-title').textContent = "Back End Development Assistant";
+                    servicesContent[1].querySelectorAll('.services__modal-service p')[0].textContent = "Assisting in the development of APIs and other needs for the company and debugging.";
+                    servicesContent[1].querySelectorAll('.services__modal-service p')[1].textContent = "Maintaining the source code.";
+                    servicesContent[1].querySelectorAll('.services__modal-service p')[2].textContent = "Assisting senior developers on Google Cloud.";
+                    servicesContent[1].querySelectorAll('.services__modal-service p')[3].textContent = "Implementing new features and other needs of the company.";
+
+                    // Servicio 3: Web Developer
+                    servicesContent[2].querySelector('.services__title').textContent = "Web Developer";
+                    servicesContent[2].querySelector('.services__modal-title').textContent = "Web Developer";
+                    servicesContent[2].querySelectorAll('.services__modal-service p')[0].textContent = "Improving user interface.";
+                    servicesContent[2].querySelectorAll('.services__modal-service p')[1].textContent = "Developing web pages.";
+                    servicesContent[2].querySelectorAll('.services__modal-service p')[2].textContent = "Translating the website into different languages.";
+                    servicesContent[2].querySelectorAll('.services__modal-service p')[3].textContent = "Developing and enhancing the video player.";
+
+                }
         }
-    }
 
     </script>
 
